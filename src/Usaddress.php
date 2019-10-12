@@ -1,8 +1,10 @@
 <?php
-namespace zahidcse\usstreetaddress;
-class Usaddress
+namespace zahidcse\Secretmanager;
+class AwsSecrets
 {
-	public function getaddress()
+    public function getSecret()
     {
         return 'Address';
     }
+	
+}
