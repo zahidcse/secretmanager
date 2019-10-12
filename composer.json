@@ -29,7 +29,7 @@
     "suggest": {
         "zahidcse/Secretmanager": "Simple hello word package" 
     },
-    "minimum-stability": "dev",  
+    "minimum-stability": "stable",  
     "extra": {
         "laravel": {
             "providers": [
