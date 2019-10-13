@@ -5,7 +5,7 @@ use Aws\Exception\AwsException;
 use Aws\Sts\StsClient;
 class AwsSecrets
 {
-    public function getSecret($secretName,$ecStatus=0)
+    public static function getSecret($secretName,$ecStatus=0)
     {
 	    
 	if($ecStatus){
