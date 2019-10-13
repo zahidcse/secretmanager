@@ -9,16 +9,7 @@ class AwsSecrets
     {
 	    
 	if($ecStatus){
-	    
-	      $s3 = new SecretsManagerClient([
-		    'version' => '2017-10-17',
-		    'region'  => 'us-east-1'
-		    
-
-	      ]);
-	}else{
-		
-	      $s3 = new SecretsManagerClient([
+	       $s3 = new SecretsManagerClient([
 		    'version' => '2017-10-17',
 		    'region'  => 'us-east-1',
 		    'credentials' => [
@@ -27,6 +18,15 @@ class AwsSecrets
 			    ],  
 
 	      ]);
+	      
+	}else{
+	      $s3 = new SecretsManagerClient([
+		    'version' => '2017-10-17',
+		    'region'  => 'us-east-1'
+		    
+
+	      ]);
+	     
 	
 	}
 
